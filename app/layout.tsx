@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Script from "next/script";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { MobileStickyAd } from "@/components/MobileStickyAd";
 import { getSiteUrl } from "@/lib/seo";
 import "./globals.css";
 
@@ -27,10 +27,21 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XS5W39GB97"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XS5W39GB97');
+          `}
+        </Script>
         <Header />
         <main>{children}</main>
         <Footer />
-        <MobileStickyAd enabled={false} />
       </body>
     </html>
   );
