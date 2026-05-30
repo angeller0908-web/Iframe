@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl } from "@/lib/seo";
+import { games } from "@/data/games";
 
 const routes = [
   "/",
@@ -11,15 +12,26 @@ const routes = [
   "/privacy-policy",
   "/terms",
   "/contact",
-  "/about"
+  "/about",
+  "/games"
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
-  return routes.map((route) => ({
+
+  const staticRoutes = routes.map((route) => ({
     url: absoluteUrl(route),
     lastModified,
-    changeFrequency: route === "/" ? "daily" : "weekly",
+    changeFrequency: route === "/" ? ("daily" as const) : ("weekly" as const),
     priority: route === "/" ? 1 : 0.7
   }));
+
+  const gameRoutes = games.map((game) => ({
+    url: absoluteUrl(`/games/${game.slug}`),
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.8
+  }));
+
+  return [...staticRoutes, ...gameRoutes];
 }

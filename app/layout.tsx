@@ -9,11 +9,25 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: {
-    default: "Fall Brainrots",
-    template: "%s | Fall Brainrots"
+    default: "Fall Brainrots \u2013 Play Unblocked Brainrot Games Free Online",
+    template: "%s | Fall Brainrots \u2013 Unblocked Games"
   },
   description:
-    "Play Fall Brainrots online for free in your browser. Run, jump, dodge obstacles, and race to the finish line.",
+    "Play Fall Brainrots and other brainrot games online for free \u2014 no download, no install. Unblocked browser games you can play at school on any device including Chromebook.",
+  keywords: [
+    "brainrot games",
+    "unblocked games",
+    "play at school",
+    "free online games",
+    "no download games",
+    "browser games",
+    "HTML5 games",
+    "Chromebook games",
+    "meme games",
+    "Italian brainrot",
+    "parkour games unblocked",
+    "Fall Brainrots"
+  ],
   openGraph: {
     type: "website",
     siteName: "Fall Brainrots"

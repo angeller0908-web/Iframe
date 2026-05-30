@@ -1,4 +1,4 @@
-import { FAQItem } from "@/data/game";
+import { FAQItem } from "@/data/games";
 import { absoluteUrl } from "@/lib/seo";
 
 type FAQProps = {

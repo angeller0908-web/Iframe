@@ -13,7 +13,7 @@ export default function SimilarGamesPage() {
   return (
     <PageShell
       title="Games Like Fall Brainrots"
-      intro="Use this page to discover related categories while we continue adding more playable entries."
+      intro="Explore all the playable games on our site. Click any game to play it directly in your browser!"
       breadcrumbs={[
         { name: "Home", path: "/" },
         { name: "Similar Games", path: "/similar-games" }
