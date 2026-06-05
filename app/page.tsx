@@ -9,9 +9,8 @@ import { buildMetadata } from "@/lib/seo";
 const game = games[0];
 
 export const metadata = buildMetadata({
-  title: "Play Fall Brainrots Unblocked \u2013 Free Online Browser Game, No Download",
-  description:
-    "Play Fall Brainrots unblocked for free in your browser. No download needed \u2014 works on Chromebook and school computers. Race through chaotic parkour courses with funny Italian brainrot characters.",
+  title: `Play ${game.title} Unblocked – Free Online Browser Game, No Download`,
+  description: game.description,
   path: "/"
 });
 
@@ -22,61 +21,52 @@ export default function HomePage() {
 
       <div className="space-y-6">
         <section className="rounded-lg bg-panel p-6 shadow-panel">
-          <h1 className="text-4xl font-bold text-white">Play Fall Brainrots Unblocked \u2013 Free Online</h1>
+          <h1 className="text-4xl font-bold text-white">Play {game.title} Unblocked – Free Online</h1>
           <p className="mt-3 max-w-3xl text-gray-200">
-            Jump into a funny, chaotic parkour challenge you can play at school or anywhere \u2014 no
-            download required. Fall Brainrots is a free browser game about running, dodging, and
-            surviving wild obstacle courses with meme-style Italian Brainrot characters. Works on
-            Chromebook, desktop, and mobile.
+            {game.description}
           </p>
         </section>
 
         <GameFrame title={game.title} iframeUrl={game.iframeUrl} />
 
-        <ContentSection id="what-is" title="What is Fall Brainrots?">
+        <ContentSection id="what-is" title={`What is ${game.title}?`}>
           <p>
-            Fall Brainrots is a free unblocked brainrot-themed parkour game you can play online in
-            your browser. Sprint through unstable platforms, jump over gaps, and dodge moving traps.
-            No download or installation is needed \u2014 just open the page and start playing. Each
-            round pushes your reaction speed and rhythm, especially when multiple characters crowd
-            narrow paths. Perfect for a quick game during study breaks.
+            {game.title} is a free unblocked game you can play online in your browser. No download
+            or installation is needed — just open the page and start playing. Works on Chromebook,
+            desktop, and mobile. Perfect for a quick game during breaks!
           </p>
         </ContentSection>
 
-        <ContentSection id="how-to-play" title="How to Play Fall Brainrots">
-          <ul className="list-disc space-y-2 pl-5">
-            <li>Run forward and keep your momentum.</li>
-            <li>Avoid traps and unstable tiles.</li>
-            <li>Jump over gaps before the edge.</li>
-            <li>Stay on the platform and recover after bumps.</li>
-            <li>Reach the finish line and retry fast after falling.</li>
+        <ContentSection id="how-to-play" title={`How to Play ${game.title}`}>
+          <ul className="list-disc space-y-2 pl-5 text-gray-200">
+            {game.tips.map((tip) => (
+              <li key={tip}>{tip}</li>
+            ))}
           </ul>
         </ContentSection>
 
         <ContentSection id="controls" title="Controls">
-          <ul className="list-disc space-y-2 pl-5">
+          <ul className="list-disc space-y-2 pl-5 text-gray-200">
             {game.controls.map((line) => (
               <li key={line}>{line}</li>
             ))}
           </ul>
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 mt-2">
             Controls may vary slightly depending on the version of the game.
           </p>
         </ContentSection>
 
         <ContentSection id="tips" title="Tips to Win">
-          <ul className="list-disc space-y-2 pl-5">
-            <li>Do not rush every obstacle.</li>
-            <li>Watch moving platforms before committing to a jump.</li>
-            <li>Jump early instead of late on long gaps.</li>
-            <li>Stay near the center of the track whenever possible.</li>
-            <li>Learn each stage pattern and replay to improve timing.</li>
+          <ul className="list-disc space-y-2 pl-5 text-gray-200">
+            {game.tips.map((tip) => (
+              <li key={tip}>{tip}</li>
+            ))}
           </ul>
         </ContentSection>
 
-        <ContentSection id="unblocked" title="Is Fall Brainrots Unblocked?">
+        <ContentSection id="unblocked" title={`Is ${game.title} Unblocked?`}>
           <p>
-            Fall Brainrots is an HTML5 browser game that runs directly in your browser \u2014 no
+            {game.title} is an HTML5 browser game that runs directly in your browser — no
             download, no app install, no sign-up required. It works on Chromebook, Windows, Mac,
             and most mobile devices. Since it runs entirely in the browser tab, it can be played at
             school, at home, or anywhere with internet access. Availability may depend on your

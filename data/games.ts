@@ -17,6 +17,52 @@ export type GameInfo = {
 
 export const games: GameInfo[] = [
   {
+    title: "Age Of Battle",
+    slug: "age-of-battle",
+    iframeUrl: "https://cloud.onlinegames.io/games/2026/unity/age-of-battle/game.html",
+    image: "https://www.onlinegames.io/media/posts/1201/responsive/age-of-battle-xs.webp",
+    description:
+      "Play Age Of Battle unblocked online for free — no download needed. Command primitive units in the Stone Age and evolve through different eras to victory in this strategic browser battle game.",
+    tags: ["Unblocked", "Strategy", "Evolve", "No Download", "Browser Game"],
+    controls: [
+      "Mouse Click / Tap - Deploy units and navigate menus",
+      "On Mobile - Tap on-screen buttons to control"
+    ],
+    tips: [
+      "Start small and smart: Use clubmen first since they need less meat.",
+      "Always watch your meat count and don't send units if you can't replace them fast.",
+      "Save coins for upgrades: Better food production makes every battle easier.",
+      "Mix your units: Combine close-range clubmen, far-hitting stone throwers, and high-damage dino riders.",
+      "Do not rush evolution: Make sure you are ready since coins and upgrades reset in the new era."
+    ],
+    faqs: [
+      {
+        question: "Is Age Of Battle free to play?",
+        answer: "Yes, Age Of Battle is 100% free to play in your browser — no download or sign-up needed."
+      },
+      {
+        question: "What is the goal of Age Of Battle?",
+        answer: "Defend your territory in the Stone Age, produce meat to deploy soldiers, defeat enemies, collect coins, and evolve into stronger eras like the Farm Age."
+      },
+      {
+        question: "Can I play Age Of Battle on mobile?",
+        answer: "Yes! Age Of Battle features responsive mobile optimization and intuitive touch controls for phones and tablets."
+      },
+      {
+        question: "Do my coins carry over when I evolve?",
+        answer: "No. When you evolve to a new era (such as the Farm Age), your coins, upgrades, and battles will reset, but you unlock much more powerful units."
+      },
+      {
+        question: "Does Age Of Battle work on Chromebook?",
+        answer: "Yes. Age Of Battle is an HTML5 browser game that runs directly in any modern web browser like Google Chrome without any downloads."
+      },
+      {
+        question: "Is Age Of Battle unblocked at school?",
+        answer: "Yes, Age Of Battle runs directly in your browser tab without any plugins. Access depends on your school's network restrictions, but there is no software install required."
+      }
+    ]
+  },
+  {
     title: "Fall Brainrots",
     slug: "fall-brainrots",
     iframeUrl: "https://cloud.onlinegames.io/games/2026/unity/fall-brainrots/game.html",
