@@ -17,6 +17,52 @@ export type GameInfo = {
 
 export const games: GameInfo[] = [
   {
+    title: "Golf Bit",
+    slug: "golf-bit",
+    iframeUrl: "https://cloud.onlinegames.io/games/2026/construct/328/golf-bit/game.html",
+    image: "https://www.onlinegames.io/media/posts/1289/responsive/golf-bit-xs.webp",
+    description:
+      "Play Golf Bit unblocked online for free — no download needed. Grab your golf club, aim precisely, and hit the golf ball when the indicator is in the green zone to sink it in this fun 2D browser sports game.",
+    tags: ["Unblocked", "Golf", "2D", "Sports", "No Download", "Browser Game"],
+    controls: [
+      "Mouse Click / Tap - Start swing and time your hit",
+      "On Mobile - Tap on-screen buttons to control"
+    ],
+    tips: [
+      "Aim carefully before starting your swing.",
+      "Time your click to hit the ball when the indicator is in the center of the green area.",
+      "Upgrade your stats (strength, speed, and bounce) to handle tougher holes.",
+      "Unlock and play on new planets like Mars, Moon, Mercury, and Saturn for unique challenges.",
+      "Avoid obstacles and hazards on the course to keep your score high."
+    ],
+    faqs: [
+      {
+        question: "Is Golf Bit free to play?",
+        answer: "Yes, Golf Bit is 100% free to play in your browser with no download or registration required."
+      },
+      {
+        question: "Who developed Golf Bit?",
+        answer: "Golf Bit is developed by FreezeNova, a popular developer of browser-based sports and arcade games."
+      },
+      {
+        question: "Can I play Golf Bit on mobile devices?",
+        answer: "Yes! Golf Bit is an HTML5 game that features fully responsive touch controls for phones and tablets."
+      },
+      {
+        question: "Are there multiple levels in Golf Bit?",
+        answer: "Yes, you can unlock and play on multiple different courses situated on various planets including Mars, the Moon, Mercury, and Saturn."
+      },
+      {
+        question: "Is Golf Bit unblocked at school?",
+        answer: "Yes. Golf Bit runs directly in any modern web browser tab. Availability depends on local network policies, but it requires no downloads or plugins."
+      },
+      {
+        question: "How do I score points in Golf Bit?",
+        answer: "You score by timing your hits correctly to sink the golf ball into the holes on the course in as few shots as possible."
+      }
+    ]
+  },
+  {
     title: "Age Of Battle",
     slug: "age-of-battle",
     iframeUrl: "https://cloud.onlinegames.io/games/2026/unity/age-of-battle/game.html",
