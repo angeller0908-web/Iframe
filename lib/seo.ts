@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const FALLBACK_SITE_URL = "https://example.com";
+const FALLBACK_SITE_URL = "https://fallbrainrots.xyz";
 
 export const getSiteUrl = () => {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || FALLBACK_SITE_URL;
