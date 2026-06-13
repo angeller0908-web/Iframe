@@ -3,10 +3,13 @@ import { ContentSection } from "@/components/ContentSection";
 import { FAQ } from "@/components/FAQ";
 import { GameFrame } from "@/components/GameFrame";
 import { SimilarGames } from "@/components/SimilarGames";
-import { games } from "@/data/games";
+import { games, getGameBySlug } from "@/data/games";
 import { buildMetadata } from "@/lib/seo";
 
-const game = games[0];
+// The home page is permanently pinned to Fall Brainrots — this is the site's
+// primary SEO landing page. Do NOT switch it to games[0]: adding a new "weekly
+// trending" game to the top of the list would otherwise hijack the home page.
+const game = getGameBySlug("fall-brainrots") ?? games[0];
 
 export const metadata = buildMetadata({
   title: `Play ${game.title} Unblocked – Free Online Browser Game, No Download`,

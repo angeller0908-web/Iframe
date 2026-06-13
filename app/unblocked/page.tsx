@@ -13,7 +13,7 @@ export default function UnblockedPage() {
   return (
     <PageShell
       title="Fall Brainrots Unblocked"
-      intro="Fall Brainrots is an unblocked browser game you can play at school for free \u2014 no download, no installation, no sign-up. Just open this page and start playing on any device including Chromebook."
+      intro="Fall Brainrots is an unblocked browser game you can play at school for free — no download, no installation, no sign-up. Just open this page and start playing on any device including Chromebook."
       breadcrumbs={[
         { name: "Home", path: "/" },
         { name: "Unblocked", path: "/unblocked" }
@@ -49,7 +49,7 @@ export default function UnblockedPage() {
       </ContentSection>
       <ContentSection title="Why Students Love Brainrot Games">
         <p>
-          Brainrot games are the perfect study break. They are fast, funny, and meme-packed \u2014
+          Brainrot games are the perfect study break. They are fast, funny, and meme-packed —
           you can jump in for a quick round between classes. Italian brainrot characters, chaotic
           physics, and silly obstacles make every round unpredictable. Plus, they work right in
           your browser with no setup, so you can play at school, at home, or on the go.
